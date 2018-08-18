@@ -1,29 +1,35 @@
 
 # coding: utf-8
 
-# In[1]:
+# In[8]:
 
 
 import pandas as pd
 
 
-# In[24]:
+# In[10]:
 
 
 import os
-os.chdir("C:/Users/gomes/Desktop/CWCL201807DATA2-Class-Repository-DATA/Homework/hmw3Python/PyBank/Resources")
-df1 = pd.read_csv("budget_data.csv")
+csvpath = os.path.join('Resources', 'budget_data.csv')
+df1 = pd.read_csv(csvpath)
 df1.head()
 
 
-# In[26]:
+# In[11]:
 
 
-print(len(df1["Date"]))
+month = print(len(df1["Date"]))
 
 
-# In[29]:
+# In[12]:
 
 
-df1["Profit/Losses"].sum()
+sum1 = df1["Profit/Losses"].sum()
+
+
+# In[20]:
+
+
+
 
